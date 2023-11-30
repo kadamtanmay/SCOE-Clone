@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Sinhgad College of Engineering, Pune</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Your custom CSS link -->
+    <style>
+        /* Add your custom styles here */
+        h1{
+            margin-bottom: 50px;
+        }
+        .card {
+            border-color: #ffa000; /* Border color to match APPLY text color */
+        }
+        .card-header{
+            font-weight: bold;
+        }
+        .card-header-sub {
+            color: #555; /* Faint black color */
+            font-size: 14px; /* Smaller font size */
+            font-weight: normal;
+        }
+      
+
+        .card-body a {
+            color: #000; /* Black color for links */
+        }
+
+        .card-body a:hover {
+            text-decoration: underline; /* Underline on hover for links */
+        }
+
+        .apply-button {
+            color: #ffa000 !important; /* Orange color for APPLY text */
+        }
+
+        .apply-button:hover {
+            text-decoration: underline; /* Underline on hover for APPLY text */
+        }
+        .btn-logout {
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logout-text {
+            margin-right: 5px;
+            margin-top: 3px;
+        }
+        .navbar-nav .active {
+    font-weight: bold !important; /* You can customize this further */
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="http://sinhgad.edu/si-theme-default/assets/si-logo.png" alt="College Logo" height="60">
+            Sinhgad Institutes | Empowering Academic Excellence
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Admission.html">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Smaller Logout Button -->
+                    <a class="nav-link btn-logout" href="#" onclick="logout()">
+                        <span class="logout-text">Logout</span>
+                        <img src="power-button.png" alt="Logout" height="25">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Courses Section -->
+    <div class="container mt-4">
+        <!-- Title Row -->
+        <!-- <div class="row">
+            <div class="col-12 text-center">
+                <h1>Courses Offered</h1>
+            </div>
+        </div> -->
+
+        <!-- Cards Rows -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Courses Offered</h1>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Engineering
+                        <br>
+                        <span class="card-header-sub">Approved By AICTE DITE, BTE</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="#">Colleges</a>
+                        <hr class="my-1"> <!-- Small line below "Colleges" link -->
+                        <a href="#">News & Events</a>
+                        <hr class="my-1"> <!-- Small line below "News & Events" link -->
+                        <a href="#">Contact</a>
+                        <hr class="my-1"> <!-- Small line below "Contact" link -->
+                        <a href="#" class="apply-button">APPLY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Health Sciences
+                        <br>
+                        <span class="card-header-sub">Approved By AICTE DITE, BTE</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="#">Colleges</a>
+                        <hr class="my-1"> <!-- Small line below "Colleges" link -->
+                        <a href="#">News & Events</a>
+                        <hr class="my-1"> <!-- Small line below "News & Events" link -->
+                        <a href="#">Contact</a>
+                        <hr class="my-1"> <!-- Small line below "Contact" link -->
+                        <a href="#" class="apply-button">APPLY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Management
+                        <br>
+                        <span class="card-header-sub">Approved By AICTE</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="#">Colleges</a>
+                        <hr class="my-1"> <!-- Small line below "Colleges" link -->
+                        <a href="#">News & Events</a>
+                        <hr class="my-1"> <!-- Small line below "News & Events" link -->
+                        <a href="#">Contact</a>
+                        <hr class="my-1"> <!-- Small line below "Contact" link -->
+                        <a href="#" class="apply-button">APPLY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Comm. & Sci.
+                        <br>
+                        <span class="card-header-sub">Approved By Govt. of Maharashtra</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="#">Colleges</a>
+                        <hr class="my-1"> <!-- Small line below "Colleges" link -->
+                        <a href="#">News & Events</a>
+                        <hr class="my-1"> <!-- Small line below "News & Events" link -->
+                        <a href="#">Contact</a>
+                        <hr class="my-1"> <!-- Small line below "Contact" link -->
+                        <a href="#" class="apply-button">APPLY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Pharmacy
+                        <br>
+                        <span class="card-header-sub">Approved By AICTE, PCI</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="#">Colleges</a>
+                        <hr class="my-1"> <!-- Small line below "Colleges" link -->
+                        <a href="#">News & Events</a>
+                        <hr class="my-1"> <!-- Small line below "News & Events" link -->
+                        <a href="#">Contact</a>
+                        <hr class="my-1"> <!-- Small line below "Contact" link -->
+                        <a href="#" class="apply-button">APPLY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Architecture
+                        <br>
+                        <span class="card-header-sub">Approved By AICTE, COA</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="#">Colleges</a>
+                        <hr class="my-1"> <!-- Small line below "Colleges" link -->
+                        <a href="#">News & Events</a>
+                        <hr class="my-1"> <!-- Small line below "News & Events" link -->
+                        <a href="#">Contact</a>
+                        <hr class="my-1"> <!-- Small line below "Contact" link -->
+                        <a href="#" class="apply-button">APPLY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Law & Education
+                        <br>
+                        <span class="card-header-sub">Approved By BCI, NCTE</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="#">Colleges</a>
+                        <hr class="my-1"> <!-- Small line below "Colleges" link -->
+                        <a href="#">News & Events</a>
+                        <hr class="my-1"> <!-- Small line below "News & Events" link -->
+                        <a href="#">Contact</a>
+                        <hr class="my-1"> <!-- Small line below "Contact" link -->
+                        <a href="#" class="apply-button">APPLY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Hotel Mgmt.
+                        <br>
+                        <span class="card-header-sub">Approved By AICTE</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="#">Colleges</a>
+                        <hr class="my-1"> <!-- Small line below "Colleges" link -->
+                        <a href="#">News & Events</a>
+                        <hr class="my-1"> <!-- Small line below "News & Events" link -->
+                        <a href="#">Contact</a>
+                        <hr class="my-1"> <!-- Small line below "Contact" link -->
+                        <a href="#" class="apply-button">APPLY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        Schools
+                        <br>
+                        <span class="card-header-sub">Recognised By Govt of M....</span>
+                    </div>
+                    <div class="card-body">
+                        <a href="#">Schools</a>
+                        <hr class="my-1"> <!-- Small line below "Colleges" link -->
+                        <a href="#">News & Events</a>
+                        <hr class="my-1"> <!-- Small line below "News & Events" link -->
+                        <a href="#">Contact</a>
+                        <hr class="my-1"> <!-- Small line below "Contact" link -->
+                        <a href="#" class="apply-button">APPLY</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat similar card blocks to create a total of 9 cards -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-2">
+        <div class="container-fluid">
+            <p>&copy; 2023 STES</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery scripts (make sure to include them at the end of the body) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <script>
+function logout() {
+    // Assuming you have stored the user token in localStorage
+    // Clear the stored token (log the user out)
+    // localStorage.removeItem('userToken');
+
+    // Redirect to the login page or any other desired page
+    window.location.href = "index.html"; // Change to your actual login page
+}
+
+            </script>
+</body>
+</html>

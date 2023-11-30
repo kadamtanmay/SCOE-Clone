@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Admission Form</title>
+    <style>
+        /* Custom styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* 100% of the viewport height */
+        }
+
+        .container {
+            flex: 1;
+            margin-top: 25px;
+            /* Adjust the margin value as needed */
+            margin-bottom: 30px;
+        }
+
+        .col-md-4 ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .col-md-4 ul li {
+            border-bottom: 1px solid #333;
+            padding: 5px 0;
+        }
+
+        .col-md-4 ul li a {
+            text-decoration: none;
+            color: inherit;
+            /* Inherit the color from the parent */
+        }
+
+        .card {
+            border: 2px solid #FFA500;
+            /* Orange */
+            border-radius: 10px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .enquire-button {
+            background-color: #FFA500;
+            /* Orange */
+            border: 1px solid #FFA500;
+            /* Orange */
+            color: #fff;
+            /* White */
+        }
+
+        /* Apply light orange color to text inside <strong> tags */
+        .col-md-4 strong {
+            color: #FFD700;
+            /* Light Orange */
+        }
+
+        h1 {
+            margin-bottom: 70px;
+        }
+
+        footer {
+            background-color: #343a40;
+            /* Dark background color */
+            color: #fff;
+            /* White text color */
+            text-align: center;
+            padding: 10px;
+        }
+
+        .btn-logout {
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logout-text {
+            margin-right: 5px;
+            margin-top: 3px;
+        }
+
+        .navbar-nav .active {
+            font-weight: bold !important;
+            /* You can customize this further */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="http://sinhgad.edu/si-theme-default/assets/si-logo.png" alt="College Logo" height="60">
+            Sinhgad Institutes | Empowering Academic Excellence
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Admission.html">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Smaller Logout Button -->
+                    <a class="nav-link btn-logout" href="#" onclick="logout()">
+                        <span class="logout-text">Logout</span>
+                        <img src="power-button.png" alt="Logout" height="25">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Admissions</h1>
+            </div>
+            <!-- Left Side - Admission Forms -->
+            <div class="col-md-4">
+                <h2>Downloads</h2>
+                <strong>Admission Forms</strong>
+
+                <ul>
+                    <li><a href="#">Engineering</a></li>
+                    <li><a href="#">Polytechnic</a></li>
+                    <li><a href="#">MBA</a></li>
+                    <li><a href="https://cuet.nta.nic.in" target="_blank">cuet.nta.nic.in</a></li>
+                    <li><a href="#">MCA</a></li>
+                    <li><a href="#">Hotel Management & Catering Technology</a></li>
+                    <li><a href="#">LAW</a></li>
+                    <li><a href="#">Pharmacy</a></li>
+                    <li><a href="#">Under Graduate</a></li>
+                </ul>
+            </div>
+
+            <!-- Middle Section - Contact Details -->
+            <div class="col-md-4">
+                <h2>Contact</h2>
+                <address>
+                    <strong>Corporate Office</strong><br>
+                    19/15 Smt. Khilare Marg, Off Karve Road, Erandawane, Pune 411004<br>
+                    Maharashtra, India<br><br>
+                    <strong>Phone:</strong> +91 20 25431001<br>
+                    <strong>Mobile:</strong> +91-9623448939<br>
+                    <strong>Email:</strong> <a href="mailto:admissions@sinhgad.edu">admissions@sinhgad.edu</a>
+                </address>
+            </div>
+
+            <!-- Right Side - Card Section -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p>We look forward to working with you as you prepare for this next step in your academic
+                            journey.</p>
+                        <a href="#" class="btn enquire-button">Enquiry Form</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-2">
+        <div class="container-fluid">
+            <p>&copy; 2023 STES</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+
+        function logout() {
+            // Assuming you have stored the user token in localStorage
+            // Clear the stored token (log the user out)
+            // localStorage.removeItem('userToken');
+
+            // Redirect to the login page or any other desired page
+            window.location.href = "index.html"; // Change to your actual login page
+        }
+
+
+    </script>
+
+</body>
+
+</html>

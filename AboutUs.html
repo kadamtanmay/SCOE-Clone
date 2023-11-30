@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Your Page Title</title>
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: 'Arial';
+            /* Change to Arial */
+            font-weight: 400;
+            /* color: #666666; */
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        h1 {
+            font-weight: 300px;
+            /* font-family: inherit; */
+            /* font-weight: normal; */
+            /* line-height: 1.2;
+    color: #333333; */
+            margin-bottom: 40px;
+        }
+
+        .container {
+            flex: 1;
+            margin-top: 25px;
+            /* Adjust the margin value as needed */
+            margin-bottom: 30px;
+        }
+
+
+        .alert-info {
+            color: #3a87ad;
+            background-color: #d9edf7;
+            border-color: #bce8f1;
+        }
+
+        .content-heading {
+            color: #c09853;
+        }
+
+        .alert {
+            padding: 8px 35px 8px 14px;
+            margin-bottom: 20px;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+            background-color: #fcf8e3;
+            border: 1px solid #fbeed5;
+            border-radius: 4px;
+        }
+
+        .sub-container a {
+            text-decoration: none;
+        }
+
+        .btn-logout {
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logout-text {
+            margin-right: 5px;
+            margin-top: 3px;
+        }
+
+        .navbar-nav .active {
+            font-weight: bold !important;
+            /* You can customize this further */
+        }
+        .kadam{
+            margin-top: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="http://sinhgad.edu/si-theme-default/assets/si-logo.png" alt="College Logo" height="60">
+            Sinhgad Institutes | Empowering Academic Excellence
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Admission.html">Admissions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <!-- Smaller Logout Button -->
+                    <a class="nav-link btn-logout" href="#" onclick="logout()">
+                        <span class="logout-text">Logout</span>
+                        <img src="power-button.png" alt="Logout" height="25">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col-12 text-center">
+            <p class="kadam" style="font-size: 220% ;"  > <strong>About Us</strong></p>
+        </div>
+        <div class="alert alert-info text-center">
+            <h4>AWARDED</h4>
+            <h5 class="content-heading">NAAC Accredited With Grade-"A+"</h5>
+            Center of Excellence for <strong>Best </strong>institution in <strong>Western Zone</strong><br> Center of
+            Excellence for <strong>Best </strong>institution in <strong>Maharashtra </strong>and <br>Certificate of
+            merit for <strong>Third Best </strong>institution in <strong>India </strong><br>
+            <sub class="sub-container">
+                <a href="http://www.thehrclub.net" target="_blank"><strong>(ref.: http://www.thehrclub.net)
+                        2014</strong></a>
+            </sub>
+        </div>
+
+        
+        <p class="text-center mb-3" style="font-size: 150%;"><strong>VISION</strong></p>
+
+        <p class="text-center mb-3" align="justify">
+            <img src="http://cms.sinhgad.edu/media/447869/vision_269x23.jpg" width="" height="" alt="vision">
+        </p>
+
+        <p class="text-center mb-3">We are committed to producing not only good engineers but good human beings,
+            also.<br><br>
+           
+            <p class="text-center mb-3" style="font-size: 150%;"><strong>MISSION</strong></p>
+        </p>
+
+        <p class="text-center mb-3">
+            “Holistic development of students and teachers is what we believe in and work for. We strive to achieve this
+            by
+            imbibing a unique value system, transparent work culture, excellent academic and physical environment
+            conducive
+            to learning, creativity, and technology transfer. Our mandate is to generate, preserve and share knowledge
+            for developing a vibrant society”.
+        </p>
+
+        <p class="text-center mb-3" style="font-size: 150%;"><strong>ABOUT US</strong></p>
+
+        <p class="text-center mb-3">
+            <img src="http://cms.sinhgad.edu/media/447884/college%20image_13145x5000.jpg" width="930" height="354"
+                alt="college Image">
+        </p>
+
+        <p class="mb-3" align="justify">Sinhgad College of Engineering (SCOE) is a private unaided institution that was
+            established in the year 1996. The institute offers eight undergraduate engineering programs of four-year
+            duration, namely Mechanical Engineering, Electronics &amp; Telecommunication Engineering, Computer
+            Engineering,
+            Chemical Engineering, Information Technology, Production Engineering, Civil Engineering, Bio-Technology. Six
+            engineering departments are offering post-graduate programs. The department of Mechanical Engineering,
+            Electronics &amp; Telecommunication Engineering, Chemical Engineering, and Civil Engineering are recognized
+            Ph.D. Research Centre by the University of Pune. The institute also offers a post-graduate program leading
+            to
+            an MBA degree. It has a total undergraduate and post-graduate enrollment of 1200 and 338 students,
+            respectively. There are 126 students registered for Ph.D. with this research center. All the courses are
+            approved by the All India Council for Technical Education (AICTE) and affiliated with the University of
+            Pune.
+        </p>
+
+        <p class="mb-3" align="justify"><strong>Institutional highlights:</strong></p>
+
+        <ul class="mb-3">
+            <!--
+            <li> “A” grade awarded by Directorate of Technical Education (DTE), Maharashtra State, Mumbai </li>
+            -->
+            <li> Accredited by National Board of Accreditation (NBA), New Delhi </li>
+            <li> Selected by MHRD, Government of India for TEQIP-II project implementation </li>
+            <li> Membership of Confederation of Indian Industries (CII) </li>
+        </ul>
+
+        <p>The college is not only dedicated to making quality engineers but also good human beings who can create a
+            niche
+            for themselves in society.</p>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-2">
+        <div class="container-fluid">
+            <p>&copy; 2023 STES</p>
+        </div>
+    </footer>
+    <script>
+
+        function logout() {
+            // Assuming you have stored the user token in localStorage
+            // Clear the stored token (log the user out)
+            // localStorage.removeItem('userToken');
+
+            // Redirect to the login page or any other desired page
+            window.location.href = "index.html"; // Change to your actual login page
+        }
+
+
+    </script>
+</body>
+
+</html>
